@@ -7,7 +7,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: sulekh/auth
+    - image: <dockerhub-account-name>/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -15,7 +15,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: sulekh/panels
+    - image: <dockerhub-account-name>/panels
       context: panels
       docker:
         dockerfile: Dockerfile
@@ -23,7 +23,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: sulekh/orders
+    - image: <dockerhub-account-name>/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -31,7 +31,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: sulekh/expiration
+    - image: <dockerhub-account-name>/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -39,7 +39,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: sulekh/payments
+    - image: <dockerhub-account-name>/payments
       context: payments
       docker:
         dockerfile: Dockerfile
@@ -47,7 +47,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: sulekh/client
+    - image: <dockerhub-account-name>/client
       context: client
       docker:
         dockerfile: Dockerfile
