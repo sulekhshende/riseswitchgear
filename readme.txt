@@ -6,7 +6,11 @@ url - https://sulekh95.hashnode.dev/how-to-install-docker-and-kubernetes-in-wsl2
 
 Clone and use npm install for all microservices
 
-Publish all services on Docker hub
+make sure to use your <dockerhub-name/service-name> in infra/k8s yaml files.
+
+Push all services on Docker hub
+
+Publish "common" dir or folder on npm.
 
 For auth service create a kubernetes secret for JWT
 
