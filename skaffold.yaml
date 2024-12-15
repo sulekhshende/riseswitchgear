@@ -7,7 +7,11 @@ build:
   local:
     push: false
   artifacts:
+<<<<<<< HEAD
     - image: sulekh/auth
+=======
+    - image: <dockerhub-account-name>/auth
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -15,7 +19,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+<<<<<<< HEAD
     - image: sulekh/panels
+=======
+    - image: <dockerhub-account-name>/panels
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: panels
       docker:
         dockerfile: Dockerfile
@@ -23,6 +31,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+<<<<<<< HEAD
     - image: sulekh/cart
       context: cart
       docker:
@@ -32,6 +41,9 @@ build:
           - src: 'src/**/*.ts'
             dest: .        
     - image: sulekh/orders
+=======
+    - image: <dockerhub-account-name>/orders
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -39,7 +51,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+<<<<<<< HEAD
     - image: sulekh/expiration
+=======
+    - image: <dockerhub-account-name>/expiration
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -47,7 +63,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+<<<<<<< HEAD
     - image: sulekh/payments
+=======
+    - image: <dockerhub-account-name>/payments
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: payments
       docker:
         dockerfile: Dockerfile
@@ -55,13 +75,18 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+<<<<<<< HEAD
     - image: sulekh/client
+=======
+    - image: <dockerhub-account-name>/client
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
       context: client
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
           - src: '**/*.js'
+<<<<<<< HEAD
             dest: .     
     - image: sulekh/deliverydetails
       context: deliverydetails
@@ -71,3 +96,6 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .   
+=======
+            dest: .        
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83

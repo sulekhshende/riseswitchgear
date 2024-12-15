@@ -18,7 +18,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@rsswitchgear/common": "^1.0.50",
+=======
+    "@rsswitchgear/common": "^1.0.25",
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     "@types/cookie-session": "^2.0.44",
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.2",

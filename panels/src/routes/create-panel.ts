@@ -2,7 +2,11 @@ import { ValidateRequest, requireAuth } from '@rsswitchgear/common';
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import { Panel } from '../models/panel';
+<<<<<<< HEAD
 import { PanelCreatedPublisher } from '../events/publishers/panel-created-publisher';
+=======
+import { PanelCreatedPublisher } from '../events/panel-created-publisher';
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 import { natsWrapper } from '../nats-wrapper';
 
 const router = express.Router();

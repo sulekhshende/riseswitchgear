@@ -6,12 +6,15 @@ import { Password } from '../services/password';
 interface UserAttrs {
     email: string;
     password: string;
+<<<<<<< HEAD
     username: string;
     isAdmin: boolean;
     city?: string;
     country?: string;
     address?: string;
     contactNumber?: string;
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 //an interface that decribes properties that
@@ -25,12 +28,15 @@ interface UserModel extends mongoose.Model<UserDoc> {
 interface UserDoc extends mongoose.Document {
     email: string;
     password: string;
+<<<<<<< HEAD
     username: string;
     isAdmin: boolean;
     city?: string;
     address?: string;
     country?: string;
     contactNumber?: string;
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 const userSchema = new mongoose.Schema({
@@ -41,6 +47,7 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+<<<<<<< HEAD
     },
     username: {
         type: String,
@@ -61,6 +68,8 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     }
 },{
     toJSON: {
@@ -68,7 +77,10 @@ const userSchema = new mongoose.Schema({
             ret.id = ret._id;
             delete ret._id;
             delete ret.password;
+<<<<<<< HEAD
             delete ret.isAdmin;
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
             delete ret.__v;
         }
     }

@@ -2,7 +2,11 @@
   "name": "payments",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "index.ts",
+=======
+  "main": "index.js",
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
   "scripts": {
     "start": "ts-node-dev --poll src/index.ts",
     "test": "jest --watchAll --no-cache  --detectOpenHandles"
@@ -18,7 +22,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@rsswitchgear/common": "^1.0.50",
+=======
+    "@rsswitchgear/common": "^1.0.25",
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     "@types/cookie-session": "^2.0.44",
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.2",
@@ -30,7 +38,11 @@
     "mongoose": "^7.0.4",
     "mongoose-update-if-current": "^1.4.0",
     "node-nats-streaming": "^0.3.2",
+<<<<<<< HEAD
     "stripe": "^14.20.0",
+=======
+    "stripe": "^12.11.0",
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   },

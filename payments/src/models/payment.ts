@@ -17,12 +17,21 @@ interface PaymentModel extends mongoose.Model<PaymentAttrs>{
 const PaymentSchema = new mongoose.Schema({
     orderId: {
         type: String,
+<<<<<<< HEAD
         required: true
     },
     stripeId: {
         type: String,
         required: true
     }
+=======
+        requireed: true
+    },
+    stripeId: {
+        type: String,
+        requireed: true
+    },
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }, {
     toJSON: {
         transform(doc, ret) {

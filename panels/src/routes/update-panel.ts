@@ -2,7 +2,11 @@ import { BadRequestError, NotAuthorizeError, NotFoundError, ValidateRequest, req
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import { Panel } from '../models/panel';
+<<<<<<< HEAD
 import { PanelUpdatedPublisher } from '../events/publishers/panel-updated-publisher';
+=======
+import { PanelUpdatedPublisher } from '../events/panel-updated-publisher';
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 import { natsWrapper } from '../nats-wrapper';
 
 const router = express.Router();

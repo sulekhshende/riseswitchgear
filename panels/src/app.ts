@@ -4,7 +4,11 @@ import cookieSession from 'cookie-session';
 import { errorHandler, NotFoundError, currentUser } from '@rsswitchgear/common';
 import { createPanelRouter } from './routes/create-panel';
 import { showPanelRouter } from './routes/show-panel';
+<<<<<<< HEAD
 import { showAllPanelsRouter } from './routes';
+=======
+import { showAllPanelsRouter } from './routes/show-all-panels';
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 import { updatePanelRouter } from './routes/update-panel';
 
 

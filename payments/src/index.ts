@@ -50,7 +50,11 @@ const start = async () => {
     };
 
     app.listen(3000, () => {
+<<<<<<< HEAD
         console.log('payments app started listening on port 3000');
+=======
+        console.log('panels app started listening on port 3000');
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     });
 };
 

@@ -5,7 +5,11 @@ import { errorHandler, NotFoundError, currentUser } from '@rsswitchgear/common';
 import { createOrderRouter } from './routes/create-order';
 import { showOrderRouter } from './routes/show-order';
 import { deleteOrderRouter } from './routes/delete-order';
+<<<<<<< HEAD
 import { showAllOrdersRouter } from './routes';
+=======
+import { showAllOrdersRouter } from './routes/show-all-orders';
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 
 
 const app = express();

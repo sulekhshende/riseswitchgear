@@ -1,9 +1,14 @@
 import { OrderStatus } from "@rsswitchgear/common";
 import mongoose from "mongoose";
+<<<<<<< HEAD
 import { CartDoc } from "./cart";
 import { PanelDoc } from "./panel";
 import { updateIfCurrentPlugin } from "mongoose-update-if-current";
 import { DeliveryDetailDoc } from "./deliverydetails";
+=======
+import { PanelDoc } from "./panel";
+import { updateIfCurrentPlugin } from "mongoose-update-if-current";
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 
 export { OrderStatus };
 
@@ -11,9 +16,13 @@ interface OrderAttrs {
     userId: string;
     status: OrderStatus;
     expiresAt: Date;
+<<<<<<< HEAD
     panel?: PanelDoc;
     cart?: CartDoc;
     deliverydetail?: DeliveryDetailDoc;
+=======
+    panel: PanelDoc;
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 interface OrderDoc extends mongoose.Document {
@@ -21,9 +30,13 @@ interface OrderDoc extends mongoose.Document {
     status: OrderStatus;
     expiresAt: Date;
     version: number;
+<<<<<<< HEAD
     panel?: PanelDoc;
     cart?: CartDoc;
     deliverydetail?: DeliveryDetailDoc;
+=======
+    panel: PanelDoc;
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 interface OrderModel extends mongoose.Model<OrderDoc> {
@@ -47,6 +60,7 @@ const orderSchema = new mongoose.Schema({
     panel: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Panel'
+<<<<<<< HEAD
     },
     cart: {
         type: mongoose.Schema.Types.ObjectId,
@@ -55,6 +69,8 @@ const orderSchema = new mongoose.Schema({
     deliverydetail: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'DeliveryDetails'
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     }
 }, {
     toJSON: {

@@ -1,4 +1,9 @@
 import { Subjects } from "./subjects";
+<<<<<<< HEAD
+=======
+import { OrderStatus } from "./types/order-status";
+
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 
 export interface OrderCancelledEvent {
     subject: Subjects.OrderCancelled;
@@ -7,6 +12,7 @@ export interface OrderCancelledEvent {
         version: number;
         panel: {
             id: string;
+<<<<<<< HEAD
         };
         deliverydetail: {
             id: string;
@@ -14,5 +20,8 @@ export interface OrderCancelledEvent {
         cart: {
             id: string;
         };
+=======
+        }
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     }
 }

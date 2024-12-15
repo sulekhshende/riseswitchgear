@@ -30,6 +30,7 @@ export class ExpirationCompleteListener extends Listener<ExpirationCompleteEvent
             id: order.id,
             version: order.version,
             panel:{
+<<<<<<< HEAD
                 id: order.panel!.id
             },
             deliverydetail:{
@@ -37,6 +38,9 @@ export class ExpirationCompleteListener extends Listener<ExpirationCompleteEvent
             },
             cart:{
                 id: order.cart!.id
+=======
+                id: order.panel.id
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
             }
         });
 

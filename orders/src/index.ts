@@ -5,8 +5,11 @@ import { PanelCreatedListener } from './events/listeners/panel-created-listener'
 import { PanelUpdatedListener } from './events/listeners/panel-updated-listener';
 import { ExpirationCompleteListener } from './events/listeners/expiration-complete-listener';
 import { PaymentCreatedListener } from './events/listeners/payment-created-listener';
+<<<<<<< HEAD
 import { DeliveryDetailCreatedListener } from './events/listeners/deliverydetail-created-listener';
 import { DeliveryDetailUpdatedListener } from './events/listeners/deliverydetail-updated-listener';
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 
 const start = async () => {
 
@@ -46,8 +49,11 @@ const start = async () => {
 
         new PanelCreatedListener(natsWrapper.client).listen();
         new PanelUpdatedListener(natsWrapper.client).listen();
+<<<<<<< HEAD
         new DeliveryDetailCreatedListener(natsWrapper.client).listen();
         new DeliveryDetailUpdatedListener(natsWrapper.client).listen(); 
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
         new ExpirationCompleteListener(natsWrapper.client).listen();
         new PaymentCreatedListener(natsWrapper.client).listen();
 

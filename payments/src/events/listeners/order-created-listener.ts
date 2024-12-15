@@ -11,6 +11,7 @@ export class OrderCreatedListener extends Listener<OrderCreatedEvent>{
     async onMessage(data: OrderCreatedEvent['data'], msg: Message){
         const order = Order.build({
             id: data.id,
+<<<<<<< HEAD
             price: data.panel!.price,
             status: data.status,
             userId: data.userId,
@@ -22,6 +23,11 @@ export class OrderCreatedListener extends Listener<OrderCreatedEvent>{
             pincode: data.deliverydetail!.pincode,
             state: data.deliverydetail!.state,
             country: data.deliverydetail!.country,
+=======
+            price: data.panel.price,
+            status: data.status,
+            userId: data.userId,
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
             version: data.version
         });
 

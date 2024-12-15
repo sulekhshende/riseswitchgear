@@ -9,15 +9,23 @@ export class PanelCreatedListener extends Listener<PanelCreatedEvent> {
     queueGroupName = queueGroupName;
 
     async onMessage(data: PanelCreatedEvent['data'], msg: Message){
+<<<<<<< HEAD
         const { id, title, price, img, description, category } = data;
+=======
+        const { id, title, price } = data;
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 
         const panel = Panel.build({
             id,
             title,
+<<<<<<< HEAD
             price,
             img,
             description,
             category
+=======
+            price
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
         });
         await panel.save();
 

@@ -4,10 +4,14 @@ import jwt from 'jsonwebtoken';
 
 interface UserPayload {
     id: string;
+<<<<<<< HEAD
     username?: string;
     email: string;
     isAdmin?: boolean;
     address?: string;
+=======
+    email: string;
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 declare module 'express' {

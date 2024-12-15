@@ -7,6 +7,7 @@ interface OrderAttrs {
     status: OrderStatus;
     userId: string;
     price: number;
+<<<<<<< HEAD
     buyername?: string;
     address?: string;
     email?: string;
@@ -16,12 +17,16 @@ interface OrderAttrs {
     state?: string;
     country?: string;
     version?: number;
+=======
+    version: number;
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 };
 
 interface OrderDoc extends mongoose.Document {
     status: OrderStatus;
     userId: string;
     price: number;
+<<<<<<< HEAD
     buyername?: string;
     address?: string;
     email?: string;
@@ -30,6 +35,8 @@ interface OrderDoc extends mongoose.Document {
     pincode?: number;
     state?: string;
     country?: string;
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     version: number;
 };
 
@@ -50,6 +57,7 @@ const orderSchema = new mongoose.Schema({
         type: String,
         requireed: true
     },
+<<<<<<< HEAD
     buyername: {
         type: String,
     },
@@ -74,6 +82,8 @@ const orderSchema = new mongoose.Schema({
     country: {
         type: String
     }
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }, {
     toJSON: {
         transform(doc, ret) {

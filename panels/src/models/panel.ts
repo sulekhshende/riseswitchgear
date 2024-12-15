@@ -29,8 +29,11 @@ interface PanelDoc extends mongoose.Document {
     img?:string;
     version: number;
     orderId: string;
+<<<<<<< HEAD
     deliveryDetailId?: string;
     cartId?: string;
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
 }
 
 const panelSchema = new mongoose.Schema({
@@ -57,12 +60,15 @@ const panelSchema = new mongoose.Schema({
     },
     orderId: {
         type: String
+<<<<<<< HEAD
     },
     deliveryDetailId: {
         type: String
     },
     cartId: {
         type: String
+=======
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
     }
 },{
     toJSON: {

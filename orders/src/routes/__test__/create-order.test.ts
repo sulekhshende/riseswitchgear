@@ -6,19 +6,32 @@ import mongoose from 'mongoose';
 import { Order, OrderStatus } from '../../models/order';
 
 
+<<<<<<< HEAD
 it("returns an error if the panel does not exist", async () => {
     const panelId = new mongoose.Types.ObjectId();
     await request(app)
         .post("/api/panels/")
         .set('Cookie', global.signin())
         .send({ panelId })
+=======
+it("returns an error if the ticket does not exist", async () => {
+    const ticketId = new mongoose.Types.ObjectId();
+    await request(app)
+        .post("/api/panels/")
+        .set('Cookie', global.signin())
+        .send({ ticketId })
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
         .expect(404);
 });
 
 it('returns and error if panel is reserved', async () => {
     const panel = Panel.build({
         id: new mongoose.Types.ObjectId().toHexString(),
+<<<<<<< HEAD
         title: 'new panel',
+=======
+        title: 'new ticket',
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
         price: 52
     });
     await panel.save();

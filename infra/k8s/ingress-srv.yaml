@@ -23,6 +23,7 @@ spec:
               service:
                 name: panels-srv
                 port:
+<<<<<<< HEAD
                   number: 3000
           - path: /api/cart/?(.*)
             pathType: Prefix
@@ -31,6 +32,9 @@ spec:
                 name: cart-srv
                 port:
                   number: 3000         
+=======
+                  number: 3000 
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
           - path: /api/orders/?(.*)
             pathType: Prefix
             backend:
@@ -45,6 +49,7 @@ spec:
                 name: payments-srv
                 port:
                   number: 3000
+<<<<<<< HEAD
           - path: /api/deliverydetails/?(.*)
             pathType: Prefix
             backend:
@@ -54,6 +59,10 @@ spec:
                   number: 3000        
           - path: /?(.*)
             pathType: ImplementationSpecific
+=======
+          - path: /?(.*)
+            pathType: Prefix
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
             backend:
               service:
                 name: client-srv

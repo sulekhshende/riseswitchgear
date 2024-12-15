@@ -14,7 +14,11 @@ spec:
     spec:
       containers:
         - name: orders
+<<<<<<< HEAD
           image: sulekh/orders
+=======
+          image: <dockerhub-account-name>/orders
+>>>>>>> ede338690b4ab569aed5d400bd341eb94f5f3f83
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
