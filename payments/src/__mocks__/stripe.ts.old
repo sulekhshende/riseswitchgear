@@ -1,0 +1,8 @@
+// export const stripe = {
+//     customers: {
+//         create: jest.fn().mockResolvedValue({})
+//     },
+//     charges: {
+//         create: jest.fn().mockResolvedValue({})
+//     }
+// };

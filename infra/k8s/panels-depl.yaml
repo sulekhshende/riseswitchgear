@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: panels-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: panels
+  template:
+    metadata:
+      labels:
+        app: panels
+    spec:
+      containers:
+        - name: panels
+          image: sulekh/panels
+          env:
+            - name: NATS_CLIENT_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: NATS_URL
+              value: 'http://nats-srv:4222'
+            - name: NATS_CLUSTER_ID
+              value: riseswitchgear 
+            - name: MONGO_URI
+              value: 'mongodb://panels-mongo-srv:27017/panels'
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: panels-srv
+spec:
+  selector:
+    app: panels
+  ports:
+    - name: panels
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

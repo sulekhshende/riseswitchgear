@@ -1,0 +1,20 @@
+{
+  "name": "kafka-test",
+  "version": "1.0.0",
+  "main": "admin.ts",
+  "scripts": {
+    "start": "ts-node-dev --poll src/admin.ts",
+    "produce": "ts-node-dev --rs --notify false src/producer.ts",
+    "consume": "ts-node-dev --rs --notify false src/consumer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.2.1",
+    "kafkajs": "^2.2.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "description": ""
+}
